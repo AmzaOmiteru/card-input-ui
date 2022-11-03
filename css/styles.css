@@ -189,12 +189,19 @@ button[type='submit']:hover{
     color: #e3c7ff;
     text-decoration: underline;
 }
+.attribution-p{
+    display: none;
+}
 
 
 /* Rensponsive design */
 @media (max-width: 750px){
-.attribution{
+.attribution-p{
     margin-top: 2rem;
+    display: block;
+}
+.attribution-l{
+    display: none;
 }
 .form{
     height: 100%;

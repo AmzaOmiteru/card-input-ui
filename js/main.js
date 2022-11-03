@@ -1,10 +1,18 @@
 
+// for input of year
 function yr() {
 
     const inp = document.querySelector('#card-year') 
     let yrValue = inp.value.replace(/[^\d]/g, '')
     yrValue = yrValue.slice(2)
     document.querySelector(`.${inp.id}`).innerHTML = yrValue;
+}
+const nm = ()=>{
+    const inp = document.querySelector('#card-num') 
+    let numValue = inp.value
+    numValue = numValue.slice(0, 19)
+    document.querySelector(`.${inp.id}`).innerHTML = numValue;
+
 }
 
 

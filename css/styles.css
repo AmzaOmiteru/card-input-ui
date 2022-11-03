@@ -195,11 +195,14 @@ button[type='submit']:hover{
 
 
 /* Rensponsive design */
-@media (max-width: 640px){
-
+@media (max-width: 750px){
+.attribution{
+    margin-top: 5rem;
+}
 
 body{
-    
+    height: max-content;
+    font-size: 16px;
     background-image: url(../images/bg-main-mobile.png);
     background-repeat: no-repeat;
     background-size: contain;    
@@ -207,16 +210,19 @@ body{
 .cards-ctn{
     flex-direction: column;
 }
+.card-num{
+    font-size: 1.2rem;
+}
+.card-cvc{
+    font-size: 1.2rem;
+}
 .card{
-    max-width: 80vw;
-}
-.card1{
+    width: 65vw;
     margin-left: 0px;
-    order: -1;
 }
-.card1{
-    margin-left: 0px;
-    order: 1;
+.form, .succ {
+    min-width: 0px;
+    padding-left: 0px;
 }
 
 

@@ -17,7 +17,6 @@ body{
     font-family: sans-serif;
 }
 .card{
-    transition: all 2s;
     color: white;
     box-sizing: content-box;
     display: inline-block;
@@ -103,7 +102,6 @@ input:focus-visible{
     margin-top: 0.4rem;
 }
 input{
-    transition: border 0.5s ease-in-out;
     box-sizing: border-box;
     padding: 0.8rem;
     width: 100%;
@@ -185,7 +183,7 @@ button[type='submit']:hover{
 .attribution a{
     color: #cc9aff;
     text-decoration: none;
-    transition: all 1s;
+    transition: all 0.3s;
 }
 .attribution a:hover{
     color: #e3c7ff;
@@ -193,15 +191,18 @@ button[type='submit']:hover{
 }
 
 
-
 /* Rensponsive design */
 @media (max-width: 750px){
 .attribution{
-    margin-top: 5rem;
+    margin-top: 2rem;
+}
+.form{
+    height: 100%;
+    margin-top: 2rem;
 }
 
 body{
-    height: max-content;
+    height: 100vh;
     font-size: 16px;
     background-image: url(../images/bg-main-mobile.png);
     background-repeat: no-repeat;
@@ -225,8 +226,7 @@ body{
     align-items: center;
 }
 .card2{
-    width: 70vw;
-    height: 7.5rem;
+    width: 70wh;
     margin-right: -10vw;
     margin-top: 2.5rem;
     order: 1;
@@ -234,9 +234,6 @@ body{
     background-size: contain;
     background-color: #21092f00;
 
-}
-.form{
-    margin-top: 2.5rem;
 }
 .cc{
     padding-top: 0px;
@@ -251,6 +248,9 @@ body{
 .form, .succ {
     min-width: 0px;
     padding-left: 0px;
+}
+.succ{
+    margin-top: 3rem;
 }
 .cards-ctn{
     flex-direction: column;

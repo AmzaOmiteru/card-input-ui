@@ -207,23 +207,53 @@ body{
     background-repeat: no-repeat;
     background-size: contain;    
 }
-.cards-ctn{
-    flex-direction: column;
-}
 .card-num{
-    font-size: 1.2rem;
+    font-size: 16px;
 }
-.card-cvc{
-    font-size: 1.2rem;
+.card-name, .cc, .card-btm{
+    font-size: 11px;
 }
 .card{
-    width: 65vw;
-    margin-left: 0px;
+    width: 70vw;
+    height: calc(67vw / 1.82448979592);
+    margin: 0px;
+    padding: 1rem;
 }
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card2{
+    width: 70vw;
+    height: 7.5rem;
+    margin-right: -10vw;
+    margin-top: 2.5rem;
+    order: 1;
+    background-position: top;
+    background-size: contain;
+    background-color: #21092f00;
+
+}
+.form{
+    margin-top: 2.5rem;
+}
+.cc{
+    padding-top: 0px;
+    padding-right: 2em;
+}
+.card1{
+    margin-left: -10vw;
+    margin-top: -4rem;
+    order: 2;
+}
+
 .form, .succ {
     min-width: 0px;
     padding-left: 0px;
 }
-
+.cards-ctn{
+    flex-direction: column;
+}
 
 }

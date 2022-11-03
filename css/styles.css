@@ -1,0 +1,224 @@
+/* Font */
+*{
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+html{
+    height: 100vh;
+}
+body{
+    /* makes sure the background covers */
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    font-size: 18px;
+    background-image: url('../images/bg-main-desktop.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: sans-serif;
+}
+.card{
+    transition: all 2s;
+    color: white;
+    box-sizing: content-box;
+    display: inline-block;
+    padding: 1rem 2rem;
+    height: 12rem;
+    width: calc(12rem * 1.8);
+    border-radius: 0.7rem;
+    margin: 2rem;
+    margin-bottom: 0px;
+    display: grid;
+    background-size: contain;
+    box-shadow: .5px .5px 3rem .5px rgba(0, 0, 0, 0.538);
+}
+.card span{
+    overflow-x: hidden;
+}
+.cards-ctn{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-num{
+    font-size: xx-large;
+}
+.card span{
+    margin: auto 0px;
+}
+.card-btm{
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+.card-cvc{
+    padding-top: 0.8em;
+    text-align: right;
+}
+.card1{
+    margin-left: 10vw;
+    background: url('../images/bg-card-front.png') no-repeat;
+}
+.card2{
+    margin-left: 16vw;
+    background: url('../images/bg-card-back.png');
+}
+.card-name, label{
+    text-transform: uppercase;
+}
+
+
+/* Form styling */
+input::placeholder{
+    color: #dedddf;
+}
+input::before{
+    
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -5px;
+    /* !importanté */
+    border-radius: inherit;
+    /* !importanté */
+    background: linear-gradient(to hsl(249, 99%, 64%) , hsl(0, 100%, 50%));
+}
+input:focus-visible{
+    padding: 0.8rem;
+    width: 100%;
+    border-width: 1px;
+    border-color: transparent;
+    margin-top: 0.4rem;
+}
+input{
+    transition: border 0.5s ease-in-out;
+    box-sizing: border-box;
+    padding: 0.8rem;
+    width: 100%;
+    border: 1px solid #dedddf;
+    border-radius: 0.4rem;
+    margin-top: 0.4rem;
+    font-weight: 600;
+}
+[input]:invalid{
+    border: 1px solid #ff5252
+}
+
+label{
+    letter-spacing: 2px;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+.inp{
+    margin-bottom: 1.2rem;
+}
+form, .suc{
+    min-width: 20rem;
+}
+.form, .succ{
+    min-width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5rem;
+}
+.succ{
+    display: none;
+    text-align: center;
+}
+button{
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    border: none;
+    background-color: #21092f;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    border-radius: 0.7rem;
+    transition: all 400ms;
+    border: 1px solid #21092f;
+}
+button[type='submit']:hover{
+    color: #21092f;
+    border: 1px solid #21092f;
+    background-color: white;
+}
+.dt {
+    max-width: inherit;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5em;
+    
+}
+#card-month{
+    margin-right: 0.35em;
+}
+#card-month, #card-year{
+    max-width: 4.5rem;
+    display: inline;
+    width: fit-content;
+}
+
+/* Footer */
+.attribution{
+    color: #dedddf;
+    text-align: center;
+    background: rgb(35,9,50);
+    background: linear-gradient(90deg, rgba(35,9,50,1) 0%, rgba(129,42,87,1) 33%, rgba(50,42,134,1) 67%, rgba(35,9,50,1) 100%);
+    padding: 1rem;
+}
+.attribution a{
+    color: #cc9aff;
+    text-decoration: none;
+    transition: all 1s;
+}
+.attribution a:hover{
+    color: #e3c7ff;
+    text-decoration: underline;
+}
+
+
+
+/* Rensponsive design */
+@media (max-width: 640px){
+
+
+body{
+    
+    background-image: url(../images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;    
+}
+.cards-ctn{
+    flex-direction: column;
+}
+.card{
+    max-width: 80vw;
+}
+.card1{
+    margin-left: 0px;
+    order: -1;
+}
+.card1{
+    margin-left: 0px;
+    order: 1;
+}
+
+
+}
